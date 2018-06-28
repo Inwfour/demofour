@@ -32,6 +32,7 @@ import { UserData } from '../providers/user-data';
 import { FourPageModule } from '../pages/four/four.module';
 import { Four2PageModule } from '../pages/four2/four2.module';
 import { Four3PageModule } from '../pages/four3/four3.module';
+import { AaaPageModule } from '../pages/aaa/aaa.module';
 
 
 @NgModule({
@@ -58,6 +59,7 @@ import { Four3PageModule } from '../pages/four3/four3.module';
     FourPageModule,
     Four2PageModule,
     Four3PageModule,
+    AaaPageModule,
     IonicModule.forRoot(ConferenceApp, {}, {
       links: [
         { component: TabsPage, name: 'TabsPage', segment: 'tabs-page' },
