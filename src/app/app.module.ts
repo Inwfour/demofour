@@ -1,3 +1,4 @@
+
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpModule } from '@angular/http';
 import { NgModule, ErrorHandler } from '@angular/core';
@@ -30,6 +31,7 @@ import { ConferenceData } from '../providers/conference-data';
 import { UserData } from '../providers/user-data';
 import { FourPageModule } from '../pages/four/four.module';
 import { Four2PageModule } from '../pages/four2/four2.module';
+import { Four3PageModule } from '../pages/four3/four3.module';
 
 
 @NgModule({
@@ -48,13 +50,14 @@ import { Four2PageModule } from '../pages/four2/four2.module';
     SpeakerListPage,
     TabsPage,
     TutorialPage,
-    SupportPage
+    SupportPage,
   ],
   imports: [
     BrowserModule,
     HttpModule,
     FourPageModule,
     Four2PageModule,
+    Four3PageModule,
     IonicModule.forRoot(ConferenceApp, {}, {
       links: [
         { component: TabsPage, name: 'TabsPage', segment: 'tabs-page' },
