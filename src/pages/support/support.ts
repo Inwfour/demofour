@@ -1,3 +1,4 @@
+import { FriendPage } from './../friend/friend';
 import { Four3Page } from './../four3/four3';
 import { Component } from '@angular/core';
 import { NgForm } from '@angular/forms';
@@ -28,6 +29,11 @@ export class SupportPage {
   gofour3(){
     this.navCtrl.push(Four3Page)
   }
+
+  friend(){
+    this.navCtrl.push(FriendPage)
+  }
+  
 
   ionViewDidEnter() {
     let toast = this.toastCtrl.create({
