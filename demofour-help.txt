@@ -1,0 +1,5 @@
+* ionic start <name>
+* choose conference
+* pull first project
+	- git branch --set-upstream-to=origin/master master
+	- git pull --rebase (pull in order to edit conflict)
