@@ -1,3 +1,4 @@
+import { Four3Page } from './../four3/four3';
 import { Component } from '@angular/core';
 import { NgForm } from '@angular/forms';
 
@@ -22,6 +23,10 @@ export class SupportPage {
     public toastCtrl: ToastController
   ) {
 
+  }
+
+  gofour3(){
+    this.navCtrl.push(Four3Page)
   }
 
   ionViewDidEnter() {
